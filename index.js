@@ -282,6 +282,7 @@
                 data.lists.splice(index, 1, val)
                 patch(box, renderLists(data.lists));
                 e.target.previousElementSibling.previousElementSibling.value = '';
+                flagHide();
             }
             //修改列表的显示--隐藏
             function flagShow(e) {
